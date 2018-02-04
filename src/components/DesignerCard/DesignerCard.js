@@ -8,13 +8,6 @@ import fredman from '../../images/fredman-design-group-cover-image.jpg';
 import tim from '../../images/tim-clarke-interior-design-cover-image.jpeg';
 import hyde from '../../images/hyde-evans-design-cover-image.jpg';
 
-{/*
-var re = /apples/gi;
-var str = 'Apples are round, and apples are juicy.';
-var newstr = str.replace(re, 'oranges');
-console.log(newstr);
-*/}
-
 
 const DesignerCard = ({ match, designers}) => {
 	const imageCover = [sire,  brooke,  fredman, tim,  hyde];
@@ -26,12 +19,14 @@ const DesignerCard = ({ match, designers}) => {
 
 	return (
 		<div className="section group">
-			{designers.map((designer, index) =>
-				index === newKeyNumber ?
-					<img src={imageCover[index]} alt=""/> : ''
+			<div className="col span_12_of_12">
+				{designers.map((designer, index) =>
+					index === newKeyNumber ?
+						<img src={imageCover[index]} alt="cover"/>
 
-
-			)}
+						: ''
+				)}
+			</div>
 		</div>
 	)
 };
