@@ -1,0 +1,17 @@
+.landing {
+  width: 100%;
+  padding: 128px 16px;
+  background-color: #b90a0a;
+  background-size: cover;
+  background-position: 50% 0px;
+  background-attachment: fixed;
+  a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ffffff;
+    width: 200px;
+    color: #000;
+  }
+}
